@@ -5,6 +5,7 @@
   background-position: center;
   color: white;
   position: relative;
+  margin-top: 30px;
 }
 .card-user {
   position: absolute;
@@ -47,3 +48,23 @@
   opacity: 0.1;
 }
 
+.card-remove-link {
+  color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: rotate(45deg);
+  opacity: 0.8;
+  &:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+  }
+}

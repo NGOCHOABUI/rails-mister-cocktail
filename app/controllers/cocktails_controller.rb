@@ -1,4 +1,5 @@
 class CocktailsController < ApplicationController
+
   before_action :find_cocktail, only: [:show]
   def home
   end
@@ -9,7 +10,7 @@ class CocktailsController < ApplicationController
     # else
     #   @cocktails = Cocktail.all
     # end
-    # @cocktails = Cocktail.all
+    @cocktails = Cocktail.all
   end
   def show
   end
@@ -32,7 +33,7 @@ private
   end
 
   def params_cocktail
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 
 end

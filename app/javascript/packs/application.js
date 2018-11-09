@@ -8,4 +8,8 @@
 // layout file, like app/views/layouts/application.html.erb
 import 'bootstrap';
 
-console.log('Hello World from Webpacker')
+import { loadDynamicBannerText } from '../components/banner';
+loadDynamicBannerText();
+
+
+// console.log('Hello World from Webpacker')
